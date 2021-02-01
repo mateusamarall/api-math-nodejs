@@ -1,4 +1,5 @@
 import mathAPI from "mathjax-node"; //pegando a biblioteca mathjax
+import base64 from 'base-64';
 mathAPI.config({
   MathJax: {},
 });
@@ -11,19 +12,20 @@ class MathController {
       mathAPI.typeset(
         {
           linebreaks: true,
-          math: mathbody,
+          math: base64.decode(mathbody),
           format: "TeX", //the input format (TeX, inline-TeX, AsciiMath, or MathML)//FORMATOS
 
           mml: true, // or svg:true, or html:true //SAIDAS
         },
         function (data) {
-          console.log(data);
+
           if (!data.errors) {
             return response
               .status(200)
               .json({
                 messasge: "Convertido com sucesso",
-                output: data.speakText,
+                output: base64.encode(data.speakText),
+
               });
           } else {
             return response
@@ -34,7 +36,7 @@ class MathController {
       );
     } catch (error) {
       return response.status(500).json({
-        error: "errro interno ao tentar converter",
+        error: "errro  ao tentar converter",
       });
     }
   }
