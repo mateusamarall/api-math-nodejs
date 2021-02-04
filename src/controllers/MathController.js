@@ -30,9 +30,10 @@ class MathController {
           }
         }
       );
-    } catch (error) {
+    } catch (err) {
       return response.status(500).json({
         error: "errro  ao tentar converter",
+        message_error:err
       });
     }
   }
