@@ -3,6 +3,6 @@ var _dotenv = require('dotenv'); var _dotenv2 = _interopRequireDefault(_dotenv);
 
 _dotenv2.default.config();
 
-const port = process.env.APP_PORT ||3333; //CASO for para frente criar arquivo .dontenv e clc a porta
+const port = process.env.PORT ||3333; //CASO for para frente criar arquivo .dontenv e clc a porta
 
 _app2.default.listen(port);
