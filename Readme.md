@@ -10,7 +10,7 @@ Este é um exemplo de código utilizado em nodejs que converte AsciiMath para ma
 
 ## Imagens API
 
-RESULTADO DA API           |  DECODIFICANDO O BASE 64
+RESULTADO DA API |  DECODIFICANDO O BASE 64
 :-------------------------:|:-------------------------:
 ![Captura de tela de 2021-04-28 17-32-08](https://user-images.githubusercontent.com/37390930/116468791-adfb3d00-a847-11eb-8b17-f19350ce6f4e.png) |![Captura de tela de 2021-04-28 17-33-28](https://user-images.githubusercontent.com/37390930/116468933-df740880-a847-11eb-8d8c-67331c79e23b.png)
 
