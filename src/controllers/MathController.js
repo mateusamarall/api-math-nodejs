@@ -12,7 +12,7 @@ class MathController {
           math: base64.decode(mathbody),
           format: "AsciiMath", //the input format (TeX, inline-TeX, AsciiMath, or MathML)//FORMATOS
 
-          mml: true, // or svg:true, or html:true //SAIDAS
+          mml: true, // or svg:true, or html:true mml:true //SAIDAS
         },
         function (data) {
 
